@@ -19,6 +19,10 @@ h3{font-size: 1.2rem; text-align: center;}
   color: #615EAA;
 }
 
+.zen-intro{
+  height: 550;
+}
+
 abbr{font-variant:small-caps;}
 
 .page-wrapper{
@@ -68,10 +72,11 @@ aside ul{
   padding-right: 5%;
 }
 
-#design-selection{
+.design-selection{
   position: absolute; 
   top: 430px;
   left: 62%;
+  width: 34%;
 }
 
 .design-selection li{
@@ -105,12 +110,16 @@ aside ul{
 .benefits p {
   order: 0;
   width: 70%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .participation{
   display: flex;
   flex-wrap: wrap;
   border-top: 1px black solid;
+  padding-top: 10px;
+  
 }
 
 .participation h3, .participation p{
@@ -134,4 +143,43 @@ a:hover{
   font-size: 300%;
   font-family: fantasy;
   float: left;
+  line-height: 1px;
+}
+
+@media screen and (max-width: 786px) {  
+    .design-selection {
+      position: static;
+      width: 100%;
+    }  
+    .explanation{
+      width: 100%;
+      border-right: none;
+    }
+    .zen-intro{
+      height: auto;
+    }
+    .participation{
+      flex-direction: column;
+
+    }
+    p{
+      text-indent: 0;
+    }
+}
+
+@media print{
+  html{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  header{
+    background-color: white; color: black;
+  }
+  .design-selection {
+    position: static;
+    width: 100%;
+  }  
+  .explanation{
+    width: 100%;
+    border-right: none;
+  }
 }
