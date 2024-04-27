@@ -70,8 +70,18 @@ aside ul{
 
 #design-selection{
   position: absolute; 
-  top: 550px;
+  top: 430px;
   left: 62%;
+}
+
+.design-selection li{
+  border-top: 1px black solid;
+  padding: 5px;
+  text-align: center;
+}
+
+.design-selection li:last-of-type{
+  border-bottom: black 1px solid;
 }
 
 .pézinho{
@@ -109,4 +119,19 @@ aside ul{
 
 .participation h3{
   align-self: center;
+}
+
+a{
+  font-weight: bolder;
+  color: #64649E;
+}
+
+a:hover{
+  color: #59B1F0;
+}
+
+.main p:first-of-type::first-letter{
+  font-size: 300%;
+  font-family: fantasy;
+  float: left;
 }
